@@ -203,28 +203,68 @@
 
         <section id="blog" class="section">
             <h2>Blog</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 1">
-                        <h3 class="card-title">Blog Post 1</h3>
-                        <p class="card-text">A brief description of the first blog post.</p>
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 1">
+                                    <h3 class="card-title">Blog Post 1</h3>
+                                    <p class="card-text">A brief description of the first blog post.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 2">
+                                    <h3 class="card-title">Blog Post 2</h3>
+                                    <p class="card-text">A brief description of the second blog post.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 3">
+                                    <h3 class="card-title">Blog Post 3</h3>
+                                    <p class="card-text">A brief description of the third blog post.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 4">
+                                    <h3 class="card-title">Blog Post 4</h3>
+                                    <p class="card-text">A brief description of the fourth blog post.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 5">
+                                    <h3 class="card-title">Blog Post 5</h3>
+                                    <p class="card-text">A brief description of the fifth blog post.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 6">
+                                    <h3 class="card-title">Blog Post 6</h3>
+                                    <p class="card-text">A brief description of the sixth blog post.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 2">
-                        <h3 class="card-title">Blog Post 2</h3>
-                        <p class="card-text">A brief description of the second blog post.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 3">
-                        <h3 class="card-title">Blog Post 3</h3>
-                        <p class="card-text">A brief description of the third blog post.</p>
-                    </div>
-                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#blogCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#blogCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
             <div class="text-center">
                 <button class="btn btn-primary">Explore all blog posts</button>
