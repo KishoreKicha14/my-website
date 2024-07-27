@@ -64,6 +64,15 @@
         .card-text {
             color: #ccc;
         }
+        .about-section {
+            display: flex;
+            align-items: center;
+        }
+        .about-section img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
         footer {
             background-color: #1e1e1e;
             color: #fff;
@@ -80,6 +89,13 @@
             nav.navbar a {
                 display: block;
                 margin: 10px 0;
+            }
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-section img {
+                margin: 0 0 20px 0;
             }
         }
         @media (max-width: 480px) {
@@ -138,28 +154,31 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About</h2>
-            <div class="card">
-                <p>
-                    Welcome to my personal website! I am Kishore Kumaar Natarajan, an AI researcher and data engineer with a strong focus on reinforcement learning and robotics. With a Master's degree in Artificial Intelligence and three years of industry experience, I am passionate about developing intelligent systems that make a significant impact.
-                </p>
-                <p>
-                    Currently, I am working at Nissan, where I specialize in creating deep learning models and integrating reinforcement learning algorithms for autonomous driving systems. My expertise includes working with sensor data, LiDAR, CAN, and image data to enhance decision-making processes and improve automation efficiency. I am proud to have achieved an 80% reduction in memory and runtime for mode transitions automation at Nissan.
-                </p>
-                <p>
-                    Before joining Nissan, I worked as a Research Assistant at San Jose State University, where I developed a voice-controlled wearable robotic device that improved task performance by 30% in pilot tests. My journey began at Atlassian (Cognizant), where I implemented a customer attrition model, developed a recommendation engine, and built ETL pipelines, leveraging my skills in Python, SQL, Bash, and various data processing and visualization tools.
-                </p>
-                <p>
-                    My technical skills encompass a wide range of programming languages and tools, including Python, SQL, Bash, Pandas, Numpy, PySpark, Power BI, Tableau, Keras, PyTorch, Scikit-learn, XGBoost, FastAPI, Postman, REST APIs, Pytest, Jenkins, Git, GitHub, AWS (Glue, S3, Redshift), and Azure (DevOps, ADF Orchestration, ADLS Gen 2, ADF, Databricks).
-                </p>
-                <p>
-                    In addition to my professional work, I am dedicated to continuous learning and growth. I am currently reading 'Reinforcement Learning: An Introduction' and exploring Monte Carlo methods. I aspire to become an expert in R&D, particularly in reinforcement learning, and am eager to master new skills such as ROS (Robot Operating System) and computer vision with LiDAR.
-                </p>
-                <p>
-                    I am also passionate about teaching and plan to introduce middle school students to the exciting world of AI through a structured program. My mission is to inspire the next generation of innovators and equip them with the skills they need to excel in the field of artificial intelligence.
-                </p>
-                <p>
-                    Thank you for visiting my website. Feel free to explore my work and connect with me for collaborations or discussions on AI and robotics.
-                </p>
+            <div class="card about-section">
+                <img src="https://via.placeholder.com/150" alt="Kishore's Picture">
+                <div>
+                    <p>
+                        Welcome to my personal website! I am Kishore Kumaar Natarajan, an AI researcher and data engineer with a strong focus on reinforcement learning and robotics. With a Master's degree in Artificial Intelligence and three years of industry experience, I am passionate about developing intelligent systems that make a significant impact.
+                    </p>
+                    <p>
+                        Currently, I am working at Nissan, where I specialize in creating deep learning models and integrating reinforcement learning algorithms for autonomous driving systems. My expertise includes working with sensor data, LiDAR, CAN, and image data to enhance decision-making processes and improve automation efficiency. I am proud to have achieved an 80% reduction in memory and runtime for mode transitions automation at Nissan.
+                    </p>
+                    <p>
+                        Before joining Nissan, I worked as a Research Assistant at San Jose State University, where I developed a voice-controlled wearable robotic device that improved task performance by 30% in pilot tests. My journey began at Atlassian (Cognizant), where I implemented a customer attrition model, developed a recommendation engine, and built ETL pipelines, leveraging my skills in Python, SQL, Bash, and various data processing and visualization tools.
+                    </p>
+                    <p>
+                        My technical skills encompass a wide range of programming languages and tools, including Python, SQL, Bash, Pandas, Numpy, PySpark, Power BI, Tableau, Keras, PyTorch, Scikit-learn, XGBoost, FastAPI, Postman, REST APIs, Pytest, Jenkins, Git, GitHub, AWS (Glue, S3, Redshift), and Azure (DevOps, ADF Orchestration, ADLS Gen 2, ADF, Databricks).
+                    </p>
+                    <p>
+                        In addition to my professional work, I am dedicated to continuous learning and growth. I am currently reading 'Reinforcement Learning: An Introduction' and exploring Monte Carlo methods. I aspire to become an expert in R&D, particularly in reinforcement learning, and am eager to master new skills such as ROS (Robot Operating System) and computer vision with LiDAR.
+                    </p>
+                    <p>
+                        I am also passionate about teaching and plan to introduce middle school students to the exciting world of AI through a structured program. My mission is to inspire the next generation of innovators and equip them with the skills they need to excel in the field of artificial intelligence.
+                    </p>
+                    <p>
+                        Thank you for visiting my website. Feel free to explore my work and connect with me for collaborations or discussions on AI and robotics.
+                    </p>
+                </div>
             </div>
         </section>
 
