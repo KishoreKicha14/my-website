@@ -15,38 +15,33 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
             text-align: center;
             padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #333;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007BFF;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
-        .sidebar {
-            float: left;
-            width: 25%;
-            padding: 10px;
-        }
-        .main-content {
-            float: left;
-            width: 70%;
-            padding: 10px;
-        }
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
         footer {
             background-color: #333;
@@ -57,9 +52,22 @@
             width: 100%;
             bottom: 0;
         }
-        .section {
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                font-size: 90%;
+            }
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
@@ -102,45 +110,7 @@
 
     <section id="blog" class="section">
         <h2>Blog</h2>
-        <div class="sidebar">
-            <div class="card">
-                <img src="profile-pic.jpg" alt="Profile Picture" style="width:100%">
-                <h3>About Me</h3>
-                <p>Denali is a simple responsive blog template. Easily add new posts using the Editor or change layout and design using the Designer.</p>
-                <h3>Featured Posts:</h3>
-                <ul>
-                    <li>According a funnily until pre-set or arrogant well cheerful</li>
-                    <li>Overlaid the jeepers uselessly much excluding</li>
-                </ul>
-                <p>Built with Webflow</p>
-                <p>
-                    <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook" style="width:20px; margin-right:5px;"></a>
-                    <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram" style="width:20px; margin-right:5px;"></a>
-                    <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter" style="width:20px; margin-right:5px;"></a>
-                    <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn" style="width:20px;"></a>
-                </p>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="card">
-                <img src="post1.jpg" alt="Post Image" style="width:100%">
-                <h3>Coffee sugar, chicory seasonal espresso barista americano</h3>
-                <p>June 25, 2020 | Music</p>
-                <p>Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings. <a href="#">Read more...</a></p>
-            </div>
-            <div class="card">
-                <img src="post2.jpg" alt="Post Image" style="width:100%">
-                <h3>Coffee variety macchiato, as organic ut variety caffeine americano</h3>
-                <p>June 25, 2020 | Travel</p>
-                <p>Saucer, crema carajillo, bar, mocha medium, latte cappuccino and espresso acerbic to go. Coffee, irish foam turkish coffee blue mountain seasonal. Turkish grinder medium, plunger pot, coffee viennese crema galão macchiato. <a href="#">Read more...</a></p>
-            </div>
-            <div class="card">
-                <img src="post3.jpg" alt="Post Image" style="width:100%">
-                <h3>According a funnily until pre-set or arrogant well cheerful</h3>
-                <p>June 25, 2020 | Lifestyle</p>
-                <p>Overlaid the jeepers uselessly much excluding ubiquitously unlikeable marshmallows. Logically following amongst nonchalantly invitingly. <a href="#">Read more...</a></p>
-            </div>
-        </div>
+        <p>Coming soon...</p>
     </section>
 </div>
 
