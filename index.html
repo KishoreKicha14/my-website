@@ -53,6 +53,17 @@
         .card:hover {
             transform: translateY(-10px);
         }
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card-text {
+            color: #ccc;
+        }
         footer {
             background-color: #1e1e1e;
             color: #fff;
@@ -173,8 +184,31 @@
 
         <section id="blog" class="section">
             <h2>Blog</h2>
-            <div class="card">
-                <p>Coming soon...</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 1">
+                        <h3 class="card-title">Blog Post 1</h3>
+                        <p class="card-text">A brief description of the first blog post.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 2">
+                        <h3 class="card-title">Blog Post 2</h3>
+                        <p class="card-text">A brief description of the second blog post.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x150" alt="Blog Image 3">
+                        <h3 class="card-title">Blog Post 3</h3>
+                        <p class="card-text">A brief description of the third blog post.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary">Explore all blog posts</button>
             </div>
         </section>
     </div>
