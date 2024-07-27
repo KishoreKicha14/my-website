@@ -6,117 +6,9 @@
     <title>Kishore Kumaar Natarajan - Personal Webpage</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        header {
-            background-color: #1e1e1e;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav.navbar {
-            background-color: #fff;
-            border: none;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        nav.navbar a {
-            color: #333;
-            transition: color 0.3s ease;
-        }
-        nav.navbar a:hover {
-            color: #1e88e5;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        .section {
-            padding: 20px 0;
-            border-bottom: 1px solid #444;
-        }
-        .card {
-            background-color: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 4px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        .card img {
-            max-width: 100%;
-            border-radius: 4px;
-        }
-        .card-title {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .card-text {
-            color: #ccc;
-        }
-        .about-section {
-            display: flex;
-            align-items: center;
-        }
-        .about-section img {
-            max-width: 200px;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-        .about-section .text-content {
-            max-width: 600px;
-        }
-        .underline {
-            text-decoration: underline;
-            color: #1e88e5;
-        }
-        footer {
-            background-color: #1e1e1e;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-            nav.navbar a {
-                display: block;
-                margin: 10px 0;
-            }
-            .about-section {
-                flex-direction: column;
-                text-align: center;
-            }
-            .about-section img {
-                margin: 0 0 20px 0;
-            }
-            .about-section .text-content {
-                max-width: 100%;
-            }
-        }
-        @media (max-width: 480px) {
-            header {
-                font-size: 90%;
-            }
-            .container {
-                width: 95%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="page-top" class="index">
     <!-- Navigation -->
@@ -142,10 +34,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                        <a class="page-scroll" href="#about-kishore">About Kishore</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#blog">Blog</a>
@@ -157,43 +49,129 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <h1>Kishore Kumaar Natarajan</h1>
-    </header>
-
-    <div class="container">
-        <section id="about" class="section">
-            <div class="about-section">
-                <img src="https://via.placeholder.com/150" alt="Kishore's Picture">
-                <div class="text-content">
-                    <h2>We've Been There</h2>
-                    <p>We've worked both brand-side and agency-side, and we've seen great teams struggle when there's more friction than collaboration. Over the years, we've developed and refined our process for bringing people together to create a collective vision and execute solutions. Now we'd like to share it with you.</p>
-                    <h3 class="underline">About Kishore</h3>
-                    <p>
-                        Welcome to my personal website! I am Kishore Kumaar Natarajan, an AI researcher and data engineer with a strong focus on reinforcement learning and robotics. With a Master's degree in Artificial Intelligence and three years of industry experience, I am passionate about developing intelligent systems that make a significant impact.
-                    </p>
-                    <p>
-                        Currently, I am working at Nissan, where I specialize in creating deep learning models and integrating reinforcement learning algorithms for autonomous driving systems. My expertise includes working with sensor data, LiDAR, CAN, and image data to enhance decision-making processes and improve automation efficiency. I am proud to have achieved an 80% reduction in memory and runtime for mode transitions automation at Nissan.
-                    </p>
-                    <p>
-                        Before joining Nissan, I worked as a Research Assistant at San Jose State University, where I developed a voice-controlled wearable robotic device that improved task performance by 30% in pilot tests. My journey began at Atlassian (Cognizant), where I implemented a customer attrition model, developed a recommendation engine, and built ETL pipelines, leveraging my skills in Python, SQL, Bash, and various data processing and visualization tools.
-                    </p>
-                    <p>
-                        My technical skills encompass a wide range of programming languages and tools, including Python, SQL, Bash, Pandas, Numpy, PySpark, Power BI, Tableau, Keras, PyTorch, Scikit-learn, XGBoost, FastAPI, Postman, REST APIs, Pytest, Jenkins, Git, GitHub, AWS (Glue, S3, Redshift), and Azure (DevOps, ADF Orchestration, ADLS Gen 2, ADF, Databricks).
-                    </p>
-                    <p>
-                        In addition to my professional work, I am dedicated to continuous learning and growth. I am currently reading 'Reinforcement Learning: An Introduction' and exploring Monte Carlo methods. I aspire to become an expert in R&D, particularly in reinforcement learning, and am eager to master new skills such as ROS (Robot Operating System) and computer vision with LiDAR.
-                    </p>
-                    <p>
-                        I am also passionate about teaching and plan to introduce middle school students to the exciting world of AI through a structured program. My mission is to inspire the next generation of innovators and equip them with the skills they need to excel in the field of artificial intelligence.
-                    </p>
-                    <p>
-                        Thank you for visiting my website. Feel free to explore my work and connect with me for collaborations or discussions on AI and robotics.
-                    </p>
+    <section id="about" class="section about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 profile-picture text-center">
+                    <img src="images/profile.jpeg" alt="Kishore's Picture" class="img-responsive">
+                </div>
+                <div class="col-md-8 text-content">
+                    <div class="container text-center">
+                        <h1>Kishore Kumaar Natarajan</h1>
+                        <h3>Innovative AI Specialist and Data Engineer</h3>
+                        <div class="social-icons">
+                            <a href="mailto:kishore.nat98@gmail.com" class="fa fa-envelope" aria-label="Email"></a>
+                            <a href="https://www.linkedin.com/in/kishorekumaar/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+                            <a href="https://github.com/kishorekumaar" class="fa fa-github" aria-label="GitHub"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="marquee-container">
+                <div class="marquee">
+                    <span class="marquee-item">Artificial Intelligence</span>
+                    <span class="marquee-item">Machine Learning</span>
+                    <span class="marquee-item">Deep Learning</span>
+                    <span class="marquee-item">Computer Vision</span>
+                    <span class="marquee-item">Reinforcement Learning</span>
+                    <span class="marquee-item">Robotics</span>
+                    <span class="marquee-item">Natural Language Processing</span>
+                    <!-- Repeat the items to create a seamless loop -->
+                    <span class="marquee-item">Artificial Intelligence</span>
+                    <span class="marquee-item">Machine Learning</span>
+                    <span class="marquee-item">Deep Learning</span>
+                    <span class="marquee-item">Computer Vision</span>
+                    <span class="marquee-item">Reinforcement Learning</span>
+                    <span class="marquee-item">Robotics</span>
+                    <span class="marquee-item">Natural Language Processing</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="about-kishore" class="section about-kishore-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-content">
+                    <div class="text-center">
+                        <h1>About Me</h1>
+                        <p style="color: red; font-weight: bold;">I'm on the job market this quarter!</p>
+                    </div>
+                    <p>
+                        I am an innovative AI specialist with a Master’s degree in Artificial Intelligence, focusing on deep learning, computer vision, and natural language processing. With 3 years of industry experience, I have developed and deployed advanced machine learning models, optimized real-time object detection, and voice command recognition systems.
+                    </p>
+                    <p>
+                        I am proficient in frameworks such as TensorFlow, PyTorch, and JAX, with a strong background in designing scalable solutions. I have leveraged Amazon Cloud Services and hardware accelerators (CUDA, GPU, TPU) to enhance AI model performance.
+                    </p>
+                    <p>
+                        My most recent role was as a Software Engineer in AI Research and Applications at Nissan Group North America, where I developed deep learning models to automate mode transitions, achieving an 80% reduction in memory and runtime. I also integrated reinforcement learning models to make decisions based on context from supervised models using data processed from sensors, LiDAR, CAN, and images.
+                    </p>
+                    <p>
+                        Prior to that, as a Research Assistant at San Jose State University, I implemented a voice-controlled wearable robotic device that enhanced task performance by 60% in pilot tests. My work involved advanced NLP models and optimizing computer vision for real-time object detection, achieving a precision of 95% and an IoU rate of 85%.
+                    </p>
+                    <p>
+                        At Atlassian (Cognizant), I designed and deployed NLP models to analyze customer feedback, leading to a 15% increase in customer satisfaction. I also implemented computer vision solutions for automated document processing and created advanced ETL pipelines to support data-driven decision-making.
+                    </p>
+                    <p>
+                        Outside of work, I have a variety of interests including travelling, social dance, gardening, music, art, creative writing, hiking, and exploring new things.
+                    </p>
+                    <div class="text-center">
+                        <a href="path/to/Kishore_Kumaar_Natarajan.pdf" download class="btn btn-primary">Download My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <h2 class="text-center">Timeline</h2>
+            <div class="timeline">
+                <!-- Nissan Group North America -->
+                <div class="timeline-item left">
+                    <div class="timeline-date">Dec 2023 - May 2024</div>
+                    <div class="timeline-content">
+                        <h4>Nissan Group North America</h4>
+                        <p>Software Engineer AI Research and Applications</p>
+                    </div>
+                </div>
+                <!-- San Jose State University -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">Jan 2022 - Aug 2023</div>
+                    <div class="timeline-content">
+                        <h4>San Jose State University</h4>
+                        <p>Research Assistant</p>
+                    </div>
+                </div>
+                <!-- San Jose State University - Education -->
+                <div class="timeline-item left">
+                    <div class="timeline-date">Jan 2022 - Dec 2023</div>
+                    <div class="timeline-content">
+                        <h4>San Jose State University</h4>
+                        <p>Master of Science, Artificial Intelligence (Computer Engineering)</p>
+                    </div>
+                </div>
+                <!-- Atlassian (Cognizant) -->
+                <div class="timeline-item right">
+                    <div class="timeline-date">Jan 2020 - Dec 2021</div>
+                    <div class="timeline-content">
+                        <h4>Atlassian (Cognizant)</h4>
+                        <p>Programmer Analyst</p>
+                    </div>
+                </div>
+                <!-- Sathyabama Institute of Science and Technology -->
+                <div class="timeline-item left">
+                    <div class="timeline-date">Jul 2016 - May 2020</div>
+                    <div class="timeline-content">
+                        <h4>Sathyabama Institute of Science and Technology</h4>
+                        <p>Bachelor of Engineering, Computer Science and Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
@@ -202,21 +180,21 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 1">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 1" class="img-responsive">
                                     <h3 class="card-title">Deep Learning for Mode Transitions Automation</h3>
                                     <p class="card-text">Developed models for automation, achieving an 80% reduction in memory and runtime.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 2">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 2" class="img-responsive">
                                     <h3 class="card-title">Voice-Controlled Wearable Robotic Device</h3>
                                     <p class="card-text">Improved task performance by 30% in pilot tests.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 3">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 3" class="img-responsive">
                                     <h3 class="card-title">Customer Attrition Model</h3>
                                     <p class="card-text">Implemented predictive models and a recommendation engine.</p>
                                 </div>
@@ -227,21 +205,21 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 4">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 4" class="img-responsive">
                                     <h3 class="card-title">Project 4</h3>
                                     <p class="card-text">Description of the fourth project.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 5">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 5" class="img-responsive">
                                     <h3 class="card-title">Project 5</h3>
                                     <p class="card-text">Description of the fifth project.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 6">
+                                    <img src="https://via.placeholder.com/350x150" alt="Project Image 6" class="img-responsive">
                                     <h3 class="card-title">Project 6</h3>
                                     <p class="card-text">Description of the sixth project.</p>
                                 </div>
@@ -261,14 +239,6 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="card">
-                <p>Email: <a href="mailto:kishore@example.com">kishore@example.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/kishore-kumaar-natarajan">Kishore Kumaar Natarajan</a></p>
-            </div>
-        </section>
-
         <section id="blog" class="section">
             <h2>Blog</h2>
             <div id="blogCarousel" class="carousel slide" data-ride="carousel">
@@ -277,21 +247,21 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 1">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 1" class="img-responsive">
                                     <h3 class="card-title">Blog Post 1</h3>
                                     <p class="card-text">A brief description of the first blog post.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 2">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 2" class="img-responsive">
                                     <h3 class="card-title">Blog Post 2</h3>
                                     <p class="card-text">A brief description of the second blog post.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 3">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 3" class="img-responsive">
                                     <h3 class="card-title">Blog Post 3</h3>
                                     <p class="card-text">A brief description of the third blog post.</p>
                                 </div>
@@ -302,21 +272,21 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 4">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 4" class="img-responsive">
                                     <h3 class="card-title">Blog Post 4</h3>
                                     <p class="card-text">A brief description of the fourth blog post.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 5">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 5" class="img-responsive">
                                     <h3 class="card-title">Blog Post 5</h3>
                                     <p class="card-text">A brief description of the fifth blog post.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
-                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 6">
+                                    <img src="https://via.placeholder.com/350x150" alt="Blog Image 6" class="img-responsive">
                                     <h3 class="card-title">Blog Post 6</h3>
                                     <p class="card-text">A brief description of the sixth blog post.</p>
                                 </div>
@@ -347,5 +317,6 @@
     <!-- Include jQuery and Bootstrap JavaScript for the navbar to work -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
