@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kishore Kumaar Natarajan - Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,19 +19,16 @@
             padding: 20px 0;
             text-align: center;
         }
-        nav {
-            text-align: center;
-            padding: 10px;
+        nav.navbar {
             background-color: #fff;
+            border: none;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
+        nav.navbar a {
             color: #333;
             transition: color 0.3s ease;
         }
-        nav a:hover {
+        nav.navbar a:hover {
             color: #007BFF;
         }
         .container {
@@ -56,7 +54,7 @@
             .container {
                 width: 90%;
             }
-            nav a {
+            nav.navbar a {
                 display: block;
                 margin: 10px 0;
             }
@@ -71,52 +69,85 @@
         }
     </style>
 </head>
-<body>
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Kishore Kumaar Natarajan</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-<header>
-    <h1>Kishore Kumaar Natarajan</h1>
-    <p>AI Researcher & Data Engineer at Nissan | Specializing in Reinforcement Learning and Robotics</p>
-</header>
+    <header>
+        <h1>Kishore Kumaar Natarajan</h1>
+        <p>AI Researcher & Data Engineer at Nissan | Specializing in Reinforcement Learning and Robotics</p>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-</nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>
+                Hello, I am Kishore Kumaar Natarajan, an AI Researcher and Data Engineer at Nissan. I specialize in Reinforcement Learning and Robotics with experience in Python, Azure, and Cloud Technologies. I help robots and cars learn and adapt to their environments through advanced AI techniques.
+            </p>
+        </section>
 
-<div class="container">
-    <section id="about" class="section">
-        <h2>About</h2>
-        <p>
-            Hello, I am Kishore Kumaar Natarajan, an AI Researcher and Data Engineer at Nissan. I specialize in Reinforcement Learning and Robotics with experience in Python, Azure, and Cloud Technologies. I help robots and cars learn and adapt to their environments through advanced AI techniques.
-        </p>
-    </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Deep Learning for Mode Transitions Automation:</strong> Developed models for automation, achieving an 80% reduction in memory and runtime.</li>
+                <li><strong>Voice-Controlled Wearable Robotic Device:</strong> Improved task performance by 30% in pilot tests.</li>
+                <li><strong>Customer Attrition Model:</strong> Implemented predictive models and a recommendation engine.</li>
+            </ul>
+        </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Deep Learning for Mode Transitions Automation:</strong> Developed models for automation, achieving an 80% reduction in memory and runtime.</li>
-            <li><strong>Voice-Controlled Wearable Robotic Device:</strong> Improved task performance by 30% in pilot tests.</li>
-            <li><strong>Customer Attrition Model:</strong> Implemented predictive models and a recommendation engine.</li>
-        </ul>
-    </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kishore@example.com">kishore@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kishore-kumaar-natarajan">Kishore Kumaar Natarajan</a></p>
+        </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kishore@example.com">kishore@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kishore-kumaar-natarajan">Kishore Kumaar Natarajan</a></p>
-    </section>
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <p>Coming soon...</p>
+        </section>
+    </div>
 
-    <section id="blog" class="section">
-        <h2>Blog</h2>
-        <p>Coming soon...</p>
-    </section>
-</div>
+    <footer>
+        <p>&copy; 2024 Kishore Kumaar Natarajan</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2024 Kishore Kumaar Natarajan</p>
-</footer>
-
+    <!-- Include jQuery and Bootstrap JavaScript for the navbar to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
